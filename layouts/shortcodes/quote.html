@@ -1,0 +1,13 @@
+{{ $author := .Get "author" }}
+{{ $source := .Get "source" }}
+{{ $url := .Get "url" }}
+<figure class="quote-block">
+  <blockquote>
+    {{ .Inner | markdownify }}
+  </blockquote>
+  <figcaption>
+    {{ with $author }}<span>{{ . }}</span>{{ end }}
+    {{ with $source }}<em>{{ . }}</em>{{ end }}
+    {{ with $url }}<a href="{{ . }}" target="_blank" rel="noreferrer">Source</a>{{ end }}
+  </figcaption>
+</figure>

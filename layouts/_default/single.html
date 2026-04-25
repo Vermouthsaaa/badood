@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="simple-shell">
+  <header class="topbar">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  </header>
+  <main class="simple-content">
+    <p class="eyebrow">Page</p>
+    <h1>{{ .Title }}</h1>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </main>
+</div>
+{{ end }}

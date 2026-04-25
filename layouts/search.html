@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="simple-shell">
+  <header class="topbar">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  </header>
+  <main class="simple-content">
+    <p class="eyebrow">Search</p>
+    <h1>{{ .Title }}</h1>
+    <div class="prose">
+      {{ .Content }}
+      <p>This page keeps the original search route available. If you do not need search on a paper homepage, you can remove [content/page/search/index.md](/D:/Desktop/badood/content/page/search/index.md).</p>
+    </div>
+  </main>
+</div>
+{{ end }}
