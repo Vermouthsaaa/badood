@@ -56,7 +56,7 @@
 
       <figure class="teaser-figure">
         {{ with $p.teaser }}
-        <img src="{{ . | relURL }}" alt="Project teaser">
+        <img src="{{ . | absURL }}" alt="Project teaser">
         {{ end }}
         <figcaption>{{ $p.teaser_caption }}</figcaption>
       </figure>
@@ -100,7 +100,7 @@
       </div>
       <figure class="results-figure">
         {{ with $p.results_image }}
-        <img src="{{ . | relURL }}" alt="Results figure">
+        <img src="{{ . | absURL }}" alt="Results figure">
         {{ end }}
         {{ with $p.results_caption }}
         <figcaption>{{ . }}</figcaption>
@@ -115,10 +115,10 @@
       <div class="visual-stack">
         <figure class="visual-figure">
           {{ if $p.visual_images }}
-          <img src="{{ index $p.visual_images 0 | relURL }}" alt="Visual figure 1">
+          <img src="{{ index $p.visual_images 0 | absURL }}" alt="Visual figure 1">
           {{ else }}
           {{ with $p.visual_image }}
-          <img src="{{ . | relURL }}" alt="Visual figure">
+          <img src="{{ . | absURL }}" alt="Visual figure">
           {{ end }}
           {{ end }}
           {{ with $p.visual_caption }}
@@ -129,8 +129,8 @@
         {{ if and $p.visual_images (ge (len $p.visual_images) 3) }}
         <figure class="visual-figure">
           <div class="visual-grid">
-            <img src="{{ index $p.visual_images 1 | relURL }}" alt="Visual figure 2">
-            <img src="{{ index $p.visual_images 2 | relURL }}" alt="Visual figure 3">
+            <img src="{{ index $p.visual_images 1 | absURL }}" alt="Visual figure 2">
+            <img src="{{ index $p.visual_images 2 | absURL }}" alt="Visual figure 3">
           </div>
           {{ with $p.visual_caption_secondary }}
           <figcaption class="visual-caption-secondary">{{ . }}</figcaption>

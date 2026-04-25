@@ -6,7 +6,7 @@ affiliations:
   - index: "1"
     name: "Beijing University of Posts and Telecommunications"
 footnote: "* Equal contribution, Corresponding author, Project lead"
-teaser: "/pipeline.png"
+teaser: "pipeline.png"
 authors:
   - name: "Donglin Ni"
     superscript: ""
@@ -25,14 +25,14 @@ links:
     url: ""
 teaser_caption: "Overview of our proposed method Bad-OOD. Bad-OOD generates OOD samples via minority guidance, trains a detector, applies beta calibration to filter low/high-confidence OOD samples, and retrains the detector from scratch using the refined set."
 
-results_image: "/results.png"
+results_image: "results.png"
 results_caption: "OOD detection results for IMAGE-NET-100 and CIFAR-100 as the in-distribution data."
 
-visual_image: "/visual.png"
+visual_image: "visual.png"
 visual_images:
-  - "/visual.png"
-  - "/visual2.png"
-  - "/visual3.png"
+  - "visual.png"
+  - "visual2.png"
+  - "visual3.png"
 visual_caption: "ID reference samples and synthetic OOD of class broccoli, candle, starfish and strawberry. The anomaly score is provided in the upper right of each sample."
 visual_caption_secondary: "OOD samples of class candle and jeep. For OOD-II and OOD-III, the class predicted by CLIP is demonstrated under each image."
 
