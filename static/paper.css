@@ -123,6 +123,11 @@ a {
   line-height: 1.5;
 }
 
+.teaser-figure figcaption strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .topbar {
   display: flex;
   align-items: center;

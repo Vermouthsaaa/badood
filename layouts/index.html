@@ -58,7 +58,15 @@
         {{ with $p.teaser }}
         <img src="{{ . | absURL }}" alt="Project teaser">
         {{ end }}
-        <figcaption>{{ $p.teaser_caption }}</figcaption>
+        <figcaption>
+          {{ $parts := split $p.teaser_caption ". " }}
+          {{ if gt (len $parts) 1 }}
+          <strong>{{ index $parts 0 }}.</strong>
+          <span>{{ delimit (after 1 $parts) ". " }}</span>
+          {{ else }}
+          <span>{{ $p.teaser_caption }}</span>
+          {{ end }}
+        </figcaption>
       </figure>
     </section>
 
