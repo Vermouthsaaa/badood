@@ -25,7 +25,7 @@ links:
     url: ""
 teaser_caption: "Overview of our proposed method Bad-OOD. Bad-OOD generates OOD samples via minority guidance, trains a detector, applies beta calibration to filter low/high-confidence OOD samples, and retrains the detector from scratch using the refined set."
 
-results_image: "/results.png"
+results_image: "static/results.png"
 results_caption: "OOD detection results for IMAGE-NET-100 and CIFAR-100 as the in-distribution data."
 
 visual_image: "/visual.png"
