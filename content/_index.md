@@ -44,8 +44,8 @@ contributions:
 bibtex: |
   @inproceedings{********************,
     title={Bad-OOD: Discovering Harmful Synthetic Diffusion Outliers via Confidence Calibration},
-    author={Donglin Ni, Yonggang Qi},
+    author={},
     booktitle={********************},
-    year={2026}
+    year={}
   }
 ---
