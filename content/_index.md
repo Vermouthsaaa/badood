@@ -5,15 +5,26 @@ summary: "Utilizing synthetic outlier samples has shown great promise in out-of-
 affiliations:
   - index: "1"
     name: "Beijing University of Posts and Telecommunications"
-footnote: "* Equal contribution, Corresponding author, Project lead"
+  - index: "2"
+    name: "HAOHAN Data"
+footnote: "*Corresponding author"
 teaser: "pipeline.png"
 authors:
   - name: "Donglin Ni"
-    superscript: ""
+    superscript: "1"
+    url: "#"
+  - name: "Zhixin Feng"
+    superscript: "1"
+    url: "#"
+  - name: "Ke Li"
+    superscript: "1"
+    url: "#"
+  - name: "Yue Zhang"
+    superscript: "2"
     url: "#"
   - name: "Yonggang Qi"
-    superscript: ""
-    url: "#"
+    superscript: "1*"
+    url: "https://qugank.github.io/"
 links:
   - label: "Paper"
     url: "#paper"
@@ -42,10 +53,10 @@ contributions:
   - "Two-stage training with outlier filtering: We show that selecting mid-confidence OOD samples leads to more compact decision boundaries and stronger detection performance."
 
 bibtex: |
-  @inproceedings{********************,
+  @inproceedings{,
     title={Bad-OOD: Discovering Harmful Synthetic Diffusion Outliers via Confidence Calibration},
     author={},
-    booktitle={********************},
+    booktitle={},
     year={}
   }
 ---
